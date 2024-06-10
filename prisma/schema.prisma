@@ -84,7 +84,6 @@ model ResetPasswordToken {
 model Page {
   id Int @id @default(autoincrement())
   name String
-  logo String
   description String @default("")
   published Boolean  @default(false)
   createdAt DateTime @default(now())
