@@ -4,11 +4,11 @@ import { HandCoins, Twitch, Youtube } from "lucide-react";
 export default function Home() {
 	return (
 		<div className="flex min-h-screen w-full flex-col">
-			<header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 z-10">
+								<header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 z-10">
 				<Navbar />
 			</header>
 			<main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-				<div className="absolute z-0 inset-0 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#086_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#086_100%)]">
+				<div className="absolute z-0 inset-0 h-[800px] w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#086_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#086_100%)]">
 					<section className="z-auto">
 						<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 							<a
@@ -38,12 +38,12 @@ export default function Home() {
 							</a>
 							<h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
 								<span className="bg-gradient-to-r from-primary dark:to-white to-gray-600 text-transparent bg-clip-text">
-									Pronto para autenticar seu novo projeto
+									Pronto para começar seu e-commerce.
 								</span>
 							</h1>
 							<p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-								Este Starter-Kit foi desenvolvido para poupar seu tempo. Aqui você encontra o que precisa para começar a
-								desenvolver seu projeto com segurança.
+								Esta plataforma foi desenvolvido para poupar seu tempo. Aqui você encontra o que precisa para começar a
+								comercializar seus produtos com segurança.
 							</p>
 							<div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
 								<a

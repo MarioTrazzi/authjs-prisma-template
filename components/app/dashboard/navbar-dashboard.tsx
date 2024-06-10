@@ -1,11 +1,11 @@
 import { auth } from "@/auth";
 import LoginBadge from "@/components/auth/login-badge";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Input } from "@/components/ui/input";
 import { Fingerprint, Search } from "lucide-react";
 import Link from "next/link";
-import { ThemeToggle } from "../theme-toggle";
 
-const Navbar = async () => {
+const NavbarDashboard = async () => {
 	const session = await auth();
 	return (
 		<>
@@ -20,7 +20,7 @@ const Navbar = async () => {
 				<Link href="/app" className="text-muted-foreground transition-colors hover:text-foreground">
 					Dashboard
 				</Link>
-				<Link href="/criar" className="text-muted-foreground transition-colors hover:text-foreground">
+				<Link href="/app/criar" className="text-muted-foreground transition-colors hover:text-foreground">
 					Criar
 				</Link>
 				<Link href="/doc" className="text-muted-foreground transition-colors hover:text-foreground">
@@ -48,4 +48,4 @@ const Navbar = async () => {
 	);
 };
 
-export default Navbar;
+export default NavbarDashboard;

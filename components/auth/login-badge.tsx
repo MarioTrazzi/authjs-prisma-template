@@ -9,10 +9,9 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { CircleUser, LogOut } from "lucide-react";
+import { CircleUser, LogOut, Settings } from "lucide-react";
 import type { User } from "next-auth";
 import Link from "next/link";
-import { LineMdCogLoop } from "../icons";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LoginButton from "./login-button";
 import LogoutButton from "./logout-button";
@@ -27,7 +26,7 @@ const LoginBadge = ({ user }: Props) => {
 			{user && (
 				<DropdownMenu>
 					<DropdownMenuTrigger asChild>
-						<Avatar>
+						<Avatar className="cursor-pointer">
 							<AvatarImage src={user?.image || ""} />
 							<AvatarFallback className="bg-green-500">
 								<CircleUser className="h-5 w-5" />
@@ -39,7 +38,7 @@ const LoginBadge = ({ user }: Props) => {
 						<DropdownMenuSeparator />
 						<DropdownMenuItem>
 							<Link href="/auth/settings" className="flex flex-1 justify-start items-center">
-								<LineMdCogLoop className="mr-2" />
+								<Settings className="mr-2" />
 								Perfil
 							</Link>
 						</DropdownMenuItem>
