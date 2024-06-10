@@ -20,7 +20,7 @@ const Navbar = async () => {
 				<Link href="/app" className="text-muted-foreground transition-colors hover:text-foreground">
 					Dashboard
 				</Link>
-				<Link href="/criar" className="text-muted-foreground transition-colors hover:text-foreground">
+				<Link href="/app/criar" className="text-muted-foreground transition-colors hover:text-foreground">
 					Criar
 				</Link>
 				<Link href="/doc" className="text-muted-foreground transition-colors hover:text-foreground">
